@@ -1,0 +1,217 @@
+$slides-head-size: 24px;
+$slides-head-adaptive-size: 22px;
+$slides-discr-size: 16px;
+$slides-text-color: #2C3E50;
+$slides-text-size: 14px;
+
+.advantages__content {
+    display: flex;
+    flex-flow: row;
+    margin-top: -140px;
+  }
+  
+  .advantages__body {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+
+.advantages__slide {
+    display: flex;
+    width: 290px;
+    height: 416px;
+    background: #FFFFFF;
+    border: 1px solid rgba(136, 140, 140, 0.4);
+    box-sizing: border-box;
+    border-radius: 30px;
+    transition: 0.5s;
+
+    &:hover {
+        background: #00AEC7;
+        color: #FFFFFF;
+        .content-discript__subtitle {
+            color: #FFFFFF;
+        }
+        .icons-advantages {
+            filter:invert(100%);
+            transition: 0.5s;
+        }
+    }
+
+    &:nth-child(1) {
+        padding: 33px 40px;
+    }
+
+    &:nth-child(2) {
+        padding: 31px 43px;
+    }
+
+    &:nth-child(3) {
+        padding: 33px  30px 33px 44px;
+    }
+
+    &:nth-child(4) {
+        padding: 40px 30px 40px 0;
+        .content-discript__title {
+            margin-top: 12px;
+        }
+        .slide-content__icons {
+            padding-left: 35px;
+        }
+        .slide-content__discript {
+            padding-left: 43px;
+        }  
+    }
+}
+
+.swiper-slide__content {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.advantages .swiper-pagination-bullet {
+    margin-right: 7px;
+}
+
+.slide-content__icon-head {
+    width: 64px;
+    height: 64px;
+}
+
+.slide-content__icon-comp{
+    width: 65px;
+    height: 64px;
+}
+
+.slide-content__icon-roccet {
+    width: 68px;
+    height: 60px;
+}
+
+.slide-content__icon-tooth{
+    width: 63px;
+    height: 63px;
+}
+
+.content-discript__title{
+    font-size: $slides-head-size;
+    margin-bottom: 11px;
+    margin-top: 18px;
+    letter-spacing: 0.8px;
+    line-height: 28px;
+}
+
+.content-discript__subtitle {
+    font-size: $slides-discr-size;
+    color:$slides-text-color;
+    line-height: 140%;
+    margin: 0;
+}
+
+.advantages__pagination {
+    text-align: center;
+    margin: 16px auto;
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .advantages__pagination {
+        display: block;
+    }
+}
+
+@media (max-width: 992px) {
+    .discript__img-block {
+        width: 400px;
+        .discript__img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .discript__content-block {
+        padding-top: 60px;
+        width: 450px;
+        .content-block__text {
+          font-size: $slides-text-size;
+        }
+        .content-block__item {
+          font-size: $slides-text-size;
+        }
+      }
+      .advantages__content {
+        margin-top: 20px;
+      }
+}
+
+@media (max-width: 768px) {
+    .advantages__content {
+        margin-top: 18px;
+      }
+}
+
+@media (max-width: 576px) {
+
+    .advantages {
+        margin-top: 0
+    }
+    .advantages__slide {
+    
+        &:nth-child(1) {
+            padding: 33px 80px;
+        }
+    
+        &:nth-child(2) {
+            padding: 31px 80px;
+        }
+    
+        &:nth-child(3) {
+            padding: 33px  80px 33px 80px;
+        }
+    
+        &:nth-child(4) {
+            padding: 40px 80px 40px 80px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .advantages__slide {
+        height: 387px;
+        .content-discript__title {
+            margin-top: 10px;
+            font-size: $slides-head-adaptive-size;
+        }
+        .content-discript__subtitle {
+            font-size: $slides-text-size;
+            line-height: 20px;
+        }
+        .slide-content__icon-head {
+            width: 67px;
+            height: 62px;
+        }
+        &:nth-child(1) {
+            padding: 29px 42px;
+        }
+    
+        &:nth-child(2) {
+            padding: 31px 43px;
+        }
+    
+        &:nth-child(3) {
+            padding: 33px  30px 33px 44px;
+        }
+    
+        &:nth-child(4) {
+            padding: 40px 30px 40px 0;
+            .content-discript__title {
+                margin-top: 12px;
+            }
+            .slide-content__icons {
+                padding-left: 35px;
+            }
+            .slide-content__discript {
+                padding-left: 43px;
+            }
+        }
+    }
+}

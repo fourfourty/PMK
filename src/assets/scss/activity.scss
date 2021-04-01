@@ -1,0 +1,86 @@
+
+.activity {
+    padding-top: 50px;
+}
+
+.swiper-activity-container {
+    display: flex;
+    max-width: 1250px;
+    min-width: 240px;
+}
+
+.activity-slide__img {
+    width: 100%;
+    height: 100%;
+    clip-path: inset(0 0 0 round 30px);
+}
+
+.activity__navigate {
+    display: flex;
+    justify-content: center;
+    margin: 31px auto;
+
+    .activity-button-prev {
+        background-image: url('../img/arrow.png');
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: rotate(180deg);
+        width: 29px;
+        height: 20px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+    .activity-button-next {
+        background-image: url('../img/arrow.png');
+        background-repeat: no-repeat;
+        background-color: transparent;
+        background-size: cover;
+        width: 29px;
+        height: 20px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.activity-pagination {
+    margin: 0 45px;
+}
+
+.swiper-pagination-bullet {
+    border: 1px solid rgba(44, 62, 80, 0.3);
+    background-color: #ffffff;
+    margin-right: 12px;
+    outline: none;
+    cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #2DB5D3;
+    cursor: pointer;
+}
+
+@media (max-width: 375px) {
+    .activity {
+        padding-top: 20px;
+        .activity-button-next,.activity-button-prev {
+            display: none;
+        }
+        .activity-pagination {
+            margin-top: -20px;
+        }
+        .swiper-pagination-bullet {
+            margin-right: 7px;
+        }
+    }
+    .swiper-activity-container {
+        min-width: 270px;
+        width: 270px;
+        margin: 0 auto;
+    }
+    .activity-slide__img {
+        clip-path: inset(0 0 0 round 7px);
+    }
+}
